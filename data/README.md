@@ -6,3 +6,7 @@ https://www.eea.europa.eu/en/datahub/featured-data/statistical-data/datahubitem-
 Forsurende gasser, forurensing, etc
 https://www.ssb.no/statbank/table/08941/tableViewLayout1/
 
+Google dataset search
+
+Statistisk sentralbyrå
+
