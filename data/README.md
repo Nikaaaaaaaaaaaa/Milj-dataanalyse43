@@ -10,3 +10,25 @@ Google dataset search
 
 Statistisk sentralbyrå
 
+
+
+#API-er
+Climate forecast 30 days
+https://openweathermap.org/api/forecast30
+API:
+https://pro.openweathermap.org/data/2.5/forecast/climate?lat={lat}&lon={lon}&appid={API key}
+
+Statistical weather data API
+https://openweathermap.org/api/statistics-api
+API:
+history.openweathermap.org/data/2.5/aggregated/year?lat={lat}&lon={lon}&appid={API key}
+
+Accumilated parameters
+https://openweathermap.org/api/accumulated-parameters
+API:
+http://history.openweathermap.org/data/2.5/history/accumulated_temperature?lat={lat}&lon={lon}&start={start}&end={end}&threshold={threshold}&appid={API key}
+
+History API
+https://openweathermap.org/history
+API:
+https://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&appid={API key}
