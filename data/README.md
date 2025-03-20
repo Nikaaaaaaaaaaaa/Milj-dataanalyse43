@@ -10,16 +10,16 @@ Google dataset search
 
 Statistisk sentralbyrå
 
-<<<<<<< HEAD
+Vi har valgt å skrive vår Python-kode i mappen notebooks. Vi brukte en JSON-reader for å kunne hente dataen og gjøre det lesbart.
+
 Vi har valgt å bruke Openweathermap sin API for å samle inn miljø-data, samt historisk data. Det viktigste informasjon over hvordan trender innenfor været har endret seg over tiden. Dette ligger sterkt med tanke på økende temperatur og sterkere vindforhold.
 API brukt: https://pro.openweathermap.org/data/2.5/forecast/climate?lat={lat}&lon={lon}&appid={API_key}
 
 
 For å vurdere deres pålitelighet og kvalitet har vi sett på hvilke kilder denne siden bruker for å samle sin informasjon. Videre har vi forsøkt å bruke real-time tester for å se om de samsvarer med områdene vi søker på i virkeligheten. Dette var videre lagt fram som et forslag av Professor Rouhani.
-=======
 
 
-#API-er
+#API-er -- Markus
 Climate forecast 30 days
 https://openweathermap.org/api/forecast30
 API:
@@ -39,4 +39,5 @@ History API
 https://openweathermap.org/history
 API:
 https://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&appid={API key}
->>>>>>> d981062e5e485670cf181fb340fbb5ad15ded938
+
+
