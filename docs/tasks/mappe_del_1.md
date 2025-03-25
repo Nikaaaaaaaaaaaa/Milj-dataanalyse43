@@ -37,6 +37,7 @@ Her skal dere fokusere på databehandling ved å utvikle funksjoner som renser o
 *Vurderingskriterier:*
 
 1. Hvilke metoder vil du bruke for å identifisere og håndtere manglende verdier i datasettet?
+        Markus fikk hjelp: Lag en metode for å identifisere manglende datasett. Hvis en metode er NULL eller 0 eller mangel, så skal det vises gjennom count funksjoner.
 2. Kan du gi et eksempel på hvordan du vil bruke list comprehensions for å manipulere dataene?
 3. Hvordan kan Pandas SQL (sqldf) forbedre datamanipuleringen sammenlignet med tradisjonelle Pandas-operasjoner?
 4. Hvilke spesifikke uregelmessigheter i dataene forventer du å møte, og hvordan planlegger du å håndtere dem?

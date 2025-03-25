@@ -43,3 +43,4 @@ History API -- Nika //kan ikke bruke fra openweather uten subscription
 https://openweathermap.org/history
 API:
 https://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&appid={API key}
+>>>>>>> d981062e5e485670cf181fb340fbb5ad15ded938
