@@ -1,16 +1,9 @@
 """Får ikke til å teste direkte fra notebook, så prøver fra her i stedenfor"""
 import requests
 import pandas as pd
-import os
 from pandasql import sqldf 
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import random
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from datetime import timedelta
 
 def load_data():
     url = "https://api.met.no/weatherapi/locationforecast/2.0/compact"
@@ -46,7 +39,7 @@ def load_data():
     df = pd.DataFrame(weather_data) # Gjør om til pandas dataframe (Gjør det til en tabell)
     return df
 
-df = load_data()
+#df = load_data()
 
 """"""
 """Forsøk på å lagre eldre data fra API-en"""
@@ -73,7 +66,7 @@ def legg_til_manglende_verdier(df_stor, min_prosent=0.01, max_prosent=0.05):
 
     return df #Returner den ødelagte df med "simulert" manglende data
 
-df_broken = legg_til_manglende_verdier(df) 
+#df_broken = legg_til_manglende_verdier(df) 
 
 
 """Oppgave 3 Databehandling"""
@@ -132,13 +125,3 @@ def flagg_kuldegrader(df_broken):
     df_broken = df_broken.copy()
     df_broken["Kuldegrader"] = df_broken["temperature"].apply(lambda t: t < 0 if pd.notnull(t) else False)
     return df_broken
-
-def prepare_data(df_broken):
-    """Kjører alle steg: viser, renser, formaterer og legger til kolonne for kuldegrader"""
-    df_broken = rens_data(df_broken)
-    df_broken = formater_data(df_broken)
-    df_broken = flagg_kuldegrader(df_broken)
-    return df_broken
-
-
-df_fixed = prepare_data(df_broken)
